@@ -1,14 +1,14 @@
 {
-  "name": "scotch-angular-testing",
+  "name": "angular-testing",
   "version": "1.0.0",
-  "description": "Learn to test Angular code with Jasmine and Karma",
+  "description": "Testing Angular code with Jasmine and Karma",
   "main": "server.js",
   "scripts": {
     "test": "karma start",
     "start": "node server.js"
   },
-  "author": "Adam Morgan",
-  "license": "ISC",
+  "author": "Ambrose Marvin",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.15.1",
     "express": "^4.13.4",
