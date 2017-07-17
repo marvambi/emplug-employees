@@ -1,7 +1,7 @@
 (function() {
   'use strict';
 
-  angular.module('meetIrl', [
+  angular.module('emplug', [
     'ui.router'
   ])
   .config(function($urlRouterProvider) {

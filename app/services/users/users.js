@@ -7,31 +7,31 @@
     var userList = [
       {
         id: '1',
-        name: 'Jane',
-        role: 'Designer',
-        location: 'New York',
-        twitter: 'gijane'
+        name: 'Marvin',
+        role: 'Architect',
+        location: 'Abuja',
+        twitter: 'marvambi'
       },
       {
         id: '2',
-        name: 'Bob',
+        name: 'Kelvin',
         role: 'Developer',
-        location: 'New York',
-        twitter: 'billybob'
+        location: 'Lagos',
+        twitter: 'brainyl'
       },
       {
         id: '3',
-        name: 'Jim',
+        name: 'Genevieve',
         role: 'Developer',
-        location: 'Chicago',
-        twitter: 'jimbo'
+        location: 'Enugu',
+        twitter: 'genibabi'
       },
       {
         id: '4',
-        name: 'Bill',
+        name: 'Chuka',
         role: 'Designer',
-        location: 'LA',
-        twitter: 'dabill'
+        location: 'Abia',
+        twitter: 'Chucks'
       }
     ];
 
