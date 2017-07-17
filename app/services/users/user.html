@@ -1,0 +1,5 @@
+<h1 class="header">User {{ uID }}'s Inforamtaion</h1>
+<div class="well" ng-controller="usersCtrl">
+    <p ng-if="users"><b>{{ users[uID - 1].name }}</b> <b>{{ users[uID - 1].role }}</b> {{ users[uID - 1].location}} @{{ users[uID - 1].twitter }}</p>
+    <p><a ui-sref="/" class="btn btn-primary">Back</a></p>
+</div>

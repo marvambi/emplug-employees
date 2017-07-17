@@ -12,11 +12,14 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <link rel="stylesheet" href="app.css">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2">
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
 
-  <script src="app.js"></script>
+  <script src="/app.js"></script>
+  <script src="/services/users/users.js"></script>
 </head>
 
 <body ng-app="emplug">
@@ -28,11 +31,41 @@
     </div>
   </nav>
 
-  <div ui-view class="col-sm-4 well col-md-offset-2 text-center">Hello, Emplugs!<br/>
-    <p style="background-color: yellowgreen; border-radius: 4px; padding: 4px; margin: auto; text-align: center;">This is the angular app view!</p>
+  <div ui-view class="col-sm-4 well col-md-offset-2 text-center">
+    <div style="background-color: yellowgreen; border-radius: 4px; padding: 4px; margin: auto;">
+        
+        <div class="table-responsive">  
+              <table id="mytable" class="table table-bordred table-striped">
+                <thead>
+                  <th>##</th>
+                  <th><i class="fa fa-user"></i> Full Name</th>
+                  <th>Role <span class="fa fa-briefcase"></span></th>
+                  <th>Location <span class="fa fa-address-card"></span></th>
+                  <th>Twitter handle</th>
+                </thead>
+                <tbody ng-controller="usersCtrl">
+                  <tr ng-repeat="user in users">
+                    <td>{{ $index + 1}}</td>
+                    <td><b>{{ user.name }}</b></td>
+                    <td><b>{{ user.role }}</b></td>
+                    <td>{{ user.location}}</td>
+                    <td>@{{ user.twitter }}</td>
+                    <td><a ng-click="tack($index)" href="#/user/{{ $index + 1}}" class="btn btn-primary">View</a></td>
+                  </tr>
+                  <style scoped>
+                    td {
+                      justify-content: left;
+                      text-align: left;
+                    }
+                  </style>
+                </tbody>
+              </table>
+        </div>
+    </div>
   </div>
 <div class="col-sm-4 well col-md-offset-2 text-center" style="clear:both;">
   <header>Does nothing interractive on the UI.</header>
+  
   <p>This is just to set up a simple test harnes.</p>
   <p>To run the test and see it in action, download or clone my repo and follow the instruction in the readme.md file</p>
   <p>Get the repo at <a href="https://github.com/marvambi/emplug-employees.git">emplug employees</a> </p>
