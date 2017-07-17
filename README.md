@@ -1,4 +1,4 @@
-### Setup
+### Setup uses the following packages
 
 `nvm use 5.0`
 
@@ -6,7 +6,7 @@
 
 `node server.js`
 
-### Test
+### Testing needs the following packages installed also
 
 `npm install -g karma-cli`
 
