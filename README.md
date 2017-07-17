@@ -12,4 +12,5 @@
 
 `npm install -g karma-cli`
 
+### Then run test like so
 `karma start`

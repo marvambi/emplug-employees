@@ -23,4 +23,4 @@ app.get('*', function(req, res) {
 });
 
 app.listen(8080);
-console.log('employee is running on 8080');
+console.log('Emplug employee is running on 8080');
