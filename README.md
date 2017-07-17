@@ -1,3 +1,5 @@
+### Just a simple angular app to set a simple test using karma test runner and the jasmine ### framework
+
 ### Setup uses the following packages
 
 `nvm use 5.0`
