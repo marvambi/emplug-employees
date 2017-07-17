@@ -1,7 +1,7 @@
 {
   "name": "angular-testing",
   "version": "1.0.0",
-  "description": "Testing Angular code with Jasmine and Karma",
+  "description": "Simple Jasmine and Karma test automation",
   "main": "server.js",
   "scripts": {
     "test": "karma start",
